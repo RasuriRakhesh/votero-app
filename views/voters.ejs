@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Votero</title>
+  <title>Voters</title>
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
   <link rel="stylesheet" href="/css/elections.css" />
 </head>
@@ -22,7 +22,7 @@
       </nav>
     </div>
     <div class="logout">
-      <a href="/signout" class="signout">SignOut</a>
+      <a href="/signout" class="signout">Sign Out</a>
     </div>
 
     <%- include('header.ejs') %>
@@ -37,7 +37,7 @@
         <% } %>
       </ul>
 
-      <a href="/elections/<%=id%>/voters/new">Create New Voter</a>
+      <a href="/elections/<%=id%>/voters/new">Create A New Voter</a>
     </div>
   </main>
 </body>
