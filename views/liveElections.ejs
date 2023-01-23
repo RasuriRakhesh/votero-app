@@ -16,9 +16,9 @@
     <div class="container">
 
       <% if(data.length===0){ %>
-      <h3 style="text-align: center;color: gray;">There are no elections live as of now 😶</h3>
+      <h3 style="text-align: center;color: gray;">No Active Elections</h3>
       <% }else{%>
-      <h3>✅ Elections running right now:</h3>
+      <h3>Active Elections</h3>
       <%} %>
 
       <ul>
@@ -30,7 +30,7 @@
 
           <a href="/elections/<%= data[i].id %>/vote">
             <button>
-              Vote
+              Vote Now
             </button>
           </a>
 
