@@ -240,7 +240,7 @@ app.get("/", async (request, response) => {
 });
 
 app.get("/admin", async function (request, response) {
-    response.render("admin", { title: "Votero" });
+    response.render("admin", { title: "Online Voting App" });
 });
 
 app.use(express.static(path.join(__dirname, "public")));
