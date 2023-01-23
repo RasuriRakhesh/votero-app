@@ -7,7 +7,7 @@
   <meta name="csrf-token" content="<%= csrfToken %>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Online voting App
+    Votero
   </title>
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
   <link rel="stylesheet" href="/css/login.css">
@@ -19,21 +19,21 @@
 
     <div class="container">
       <form action="/users" method="post">
-        <h3> Signup </h3>
+        <h3> Signup as new user</h3>
         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
         <div>
-          <input type="text" name="Enter firstName" placeholder="First Name"><i></i>
+          <input type="text" name="firstName" placeholder="First Name"><i></i>
         </div>
         <div>
-          <input type="text" name="Enter lastName" placeholder="Last Name"><i></i>
+          <input type="text" name="lastName" placeholder="Last Name"><i></i>
         </div>
         <div>
-          <input type="email" name="Enter email id" placeholder="Email"><i></i>
+          <input type="email" name="email" placeholder="Email"><i></i>
         </div>
         <div>
-          <input type="password" name="Enter password" placeholder="Password"><i></i>
+          <input type="password" name="password" placeholder="Password"><i></i>
         </div>
-        <input type="submit" value="Sign Up">
+        <input type="submit" value="Sign-up">
       </form>
       <% if(messages && messages.error && messages.error.length > 0)  { %>
       <% for(var i=0; i<messages.error.length; i++) { %>

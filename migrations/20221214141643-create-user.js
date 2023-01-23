@@ -21,13 +21,13 @@ module.exports = {
         allowNull: false,
         unique: {
           args: true,
-          msg: "Already exits , Try again",
+          msg: "Credentials already existing , Try Sign-in",
         },
         validate: {
           notNull: true,
           len: {
             args: 1,
-            msg: "Enter email...",
+            msg: "Email Required",
           },
         },
       },
